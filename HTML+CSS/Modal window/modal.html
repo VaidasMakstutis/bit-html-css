@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="modal.css">
+
+<body onclick="manoFunkcija('tekstas', 5)">
+    <div id="modal-background" class="modal" onclick="backdropClose(event, 'modal-background')">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal ('modal-background')">&times;</span>
+            <p>Modal turinys</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem hic optio impedit deserunt? Sit aut
+                ratione perspiciatis iste ullam. Dolorum, illum veritatis corporis earum sunt illo voluptatum aliquid
+                ipsum culpa?</p>
+        </div>
+
+    </div>
+
+    <div id="modal-background-2" class="modal" onclick="backdropClose(event, 'modal-background-2')">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal ('modal-background-2')">&times;</span>
+            <p>Modal turinys 2</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem hic optio impedit deserunt? Sit aut
+                ratione perspiciatis iste ullam. Dolorum, illum veritatis corporis earum sunt illo voluptatum aliquid
+                ipsum culpa?</p>
+        </div>
+
+    </div>
+
+    <h1>Musu puslapis</h1>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum voluptatem, laboriosam in praesentium possimus
+        velit blanditiis cupiditate unde officiis distinctio fugiat natus dolor culpa dignissimos! Repellendus itaque
+        nisi molestiae earum.</p>
+    <button onclick="openModal('modal-background')">Atidaryti modala</button>
+    <button onclick="openModal('modal-background-2')">Atidaryti modala 2</button>
+
+    <script>
+        function openModal(elementId) {
+            // console.log('veikia mygtukas');
+            document.getElementById(elementId).style.display = 'flex';
+            // console.log(elementId);
+        }
+
+        function closeModal(elementId) {
+            // console.log(event);
+            document.getElementById(elementId).style.display = 'none';
+        }
+
+        function backdropClose(event, elementId) {
+            if (event.target.id === elementId) {
+                document.getElementById(elementId).style.display = 'none';
+            }
+        }
+
+        function manoFunkcija(tekstas, skaicius) {
+             console.log('Musu tekstas = ' + tekstas);
+             console.log('Musu skaicius = ' + skaicius);
+             console.log('Skaicius ' + skaicius + ' kvadratu = ' + skaicius * skaicius);
+             console.log('Skaicius ' + skaicius + ' kubu = ' + skaicius * skaicius * skaicius);
+         }
+    </script>
+</body>
+
+</html>

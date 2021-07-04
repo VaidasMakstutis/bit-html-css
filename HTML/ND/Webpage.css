@@ -1,0 +1,30 @@
+body {
+    height:185mm;
+    width:210mm;
+    margin-left: 20mm;
+    margin-right: 10mm;
+    margin-top: 10mm;
+    margin-bottom: 10mm;
+    border: 5px solid;
+}
+
+h1 {
+    text-align: center; 
+}
+
+p {
+    text-align: left;
+    border: 1px solid;
+}
+
+hr {
+    border-top: 10px solid #B22222;
+    border-bottom: 10px solid #FF0000;
+    border-left: 10px solid #B22222;
+    border-right: 10px solid #FF0000;
+    
+}
+
+div {
+    font-size: 25px;
+}
