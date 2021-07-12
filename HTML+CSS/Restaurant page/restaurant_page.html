@@ -20,11 +20,21 @@
 
 <body>
     <nav id="navbar">
-        <a href="#specials">Specials</a>
-        <a href="#about">About</a>
-        <a href="#menu">Menu</a>
-        <a href="#chef">Chef</a>
-        <a href="#contact">Contact</a>
+        <div id="menu-options" class="menu-options">
+            <a href="#specials" onclick="menuClose()">Specials</a>
+            <a href="#about" onclick="menuClose()">About</a>
+            <a href="#menu" onclick="menuClose()">Menu</a>
+            <a href="#chef" onclick="menuClose()">Chef</a>
+            <a href="#contact" onclick="menuClose()">Contact</a>
+        </div>
+        <div id="hamburger" class="menu-container" onclick="menuToggle()">
+            <div class="bar1">
+            </div>
+            <div class="bar2">
+            </div>
+            <div class="bar3">
+            </div>
+        </div>
     </nav>
     <header>
         <span></span>
@@ -405,7 +415,7 @@
             <div class="submit-button">
                 <input type="submit" value="Send message">
             </div>
-            
+
         </form>
 
     </div>
@@ -420,6 +430,21 @@
             <a href="https://www.youtube.com" target="_blank"><i class="fa fa-youtube"></i></a>
         </div>
     </div>
+
+    <script>
+        let menuOptions = document.getElementById('menu-options');
+        let hamburger = document.getElementById('hamburger');
+
+        function menuToggle() {
+            menuOptions.classList.toggle('change');
+            hamburger.classList.toggle('change');
+        }
+
+        function menuClose() {
+            menuOptions.classList.remove('change');
+            hamburger.classList.remove('change');
+        }
+    </script>
 
 </body>
 
