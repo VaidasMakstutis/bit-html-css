@@ -1,0 +1,25 @@
+#section-d {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#section-d .box {
+    width: 100%;
+    padding: 2em;
+}
+
+#section-d .box:first-child {
+    background: #2690d4;
+}
+
+#section-d .box p {
+    margin: 0;
+    padding: 1em 0;
+}
+
+@media screen and (max-width:768px) {
+    #section-d {
+        flex-direction: column;
+    }
+}
