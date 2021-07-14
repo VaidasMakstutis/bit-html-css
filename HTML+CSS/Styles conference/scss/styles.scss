@@ -6,7 +6,7 @@
 }
 
 body {
-    background: #293f50;
+    background: $body-background;
     color: #888;
     font: 300 16px/22px "Lato", Arial, sans-serif;
 }
@@ -26,4 +26,16 @@ h3 {
 
 h1, h3, h4, h5, p {
     margin-bottom: 22px;
+}
+
+h5 {
+    color: #a9b2b9;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+a {
+    color: #648880;
+    text-decoration: none;
 }

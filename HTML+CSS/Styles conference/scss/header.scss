@@ -4,6 +4,7 @@ header {
         flex-direction: row;
         justify-content: space-between;
         align-items: flex-end;
+        margin-bottom: 22px;
 
         h1 {
             border-top: 4px solid #648880;
@@ -46,5 +47,31 @@ header {
     }
     .header-bottom {
         text-align: center;
+        color: #fff;
+        padding: 22px 80px 66px 80px;
+        line-height: 44px;
+
+        h2 {
+            font-size: 36px;
+        }
+        p {
+            font-size: 24px;
+            font-weight: 100;
+        }
+        a {
+            border: 1px solid #fff;
+            padding: 10px 30px;
+            border-radius: 5px;
+            display: inline-block;
+            font-weight: 400;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: #fff;
+            &:hover {
+                background: #fff;
+                color: #648880;
+            }
+        }
     }
 }
